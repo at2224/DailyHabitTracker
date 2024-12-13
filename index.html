@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Daily Habit Tracker </title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+
+    <body>
+        <h1 id = "header"> Habit Tracker </h1>
+        <div id = "top-container">
+            <div id = checklist-container>
+                <ul>
+                    <li> <input type = "checkbox" id = "checkbox" placeholder="Habit">
+                        <label for="checkbox" id = "checkbox-label">Habit</label> </li>
+                </ul>
+                
+            </div>
+            <p id = "streak-num"> 0 streak </p>
+        </div>
+        <br>
+        <div id = "progress-container">
+            <progress id = "progress-bar" value = "0" max = "100"> </progress>
+            <p id="progress-text"> 0% </p>
+        </div>
+    </body>
+    <script src = "script.js"></script>
+</html>
