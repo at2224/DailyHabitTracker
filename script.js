@@ -17,4 +17,5 @@ checklistContainer.addEventListener('click', function() {
     checklistContainer.appendChild(node);
     checklistContainer.appendChild(node2);
     checklistContainer.appendChild(node3);
+    // create list item, add inputs to list item, then add list item to checklistcontainer
 })
