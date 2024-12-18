@@ -5,17 +5,24 @@ const checkboxText = document.querySelectorAll("checkbox-text");
 const topContainer = document.getElementById("top-container");
 
 
-checklistContainer.addEventListener('click', function() {
+checklistContainer.addEventListener('click', function(event) {
+    if (event.target.tagName === 'INPUT' || event.target.tagName === 'BUTTON') {
+        return;
+    }
+    
     const node = document.createElement('input');
     const node2 = document.createElement('input');
     const node3 = document.createElement('button');
+    var li = document.createElement('li');
     node.type = 'checkbox';
     node.className = 'checkbox';
     node2.type = 'text';
     node2.className = 'checkbox-text';
     node3.textContent = 'X';
-    checklistContainer.appendChild(node);
-    checklistContainer.appendChild(node2);
-    checklistContainer.appendChild(node3);
+    li.appendChild(node);
+    li.appendChild(node2);
+    li.appendChild(node3);
+    ulContainer.appendChild(li);
+    
     // create list item, add inputs to list item, then add list item to checklistcontainer
 })
